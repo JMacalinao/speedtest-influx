@@ -4,12 +4,12 @@
 sleep 60
 
 while :; do
-	if [[ -z "${SPEEDTEST_SERVER_URL}" ]]; then
+	if [[ -z "${SPEEDTEST_SERVER}" ]]; then
 	 	echo "[$(date)] Starting Speedtest CLI..."
-		JSON=$(./speedtest --accept-license -f json)
+		JSON=$(./speedtest --accept-license --accept-gdpr -f json)
 	else
  		echo "[$(date)] Starting Speedtest CLI with specific server ID ${SPEEDTEST_SERVER}..."
- 		JSON=$(./speedtest --accept-license -f json -s ${SPEEDTEST_SERVER})
+ 		JSON=$(./speedtest --accept-license --accept-gdpr -f json -s ${SPEEDTEST_SERVER})
 	fi
 	DOWNLOAD=$(echo ${JSON} | jq -r .download.bandwidth)
 	DOWNLOAD=$(printf %.2f\\n "$((DOWNLOAD * 8 / 10000))e-2")
