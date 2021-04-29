@@ -16,5 +16,6 @@ RUN export SPEEDTESTVERSION="1.0.0" && \
     chmod +x speedtest
 
 COPY run.sh .
+RUN chmod +x run.sh
 
-CMD ["./run.sh"]
+ENTRYPOINT ["./run.sh"]
