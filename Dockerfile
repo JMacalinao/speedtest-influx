@@ -10,6 +10,7 @@ WORKDIR /app
 RUN export SPEEDTESTVERSION="1.0.0" && \
     export SPEEDTESTARCH="x86_64" && \
     export SPEEDTESTPLATFORM="linux" && \
+    apt-get update && \
     apt-get install jq curl -y && \
     curl -Ss -L https://ookla.bintray.com/download/ookla-speedtest-$SPEEDTESTVERSION-$SPEEDTESTARCH-$SPEEDTESTPLATFORM.tgz | tar -zx -C /app && \
     chmod +x speedtest
