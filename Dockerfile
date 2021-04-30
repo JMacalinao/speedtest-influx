@@ -1,4 +1,4 @@
-FROM ubuntu:18.04 as build
+FROM debian:stable-slim as build
 
 ENV INFLUXDB_DB="speedtest" \
     INFLUXDB_URL="http://influxdb:8086" \
