@@ -39,6 +39,11 @@ Environment variable | Default | Description
 `SPEEDTEST_INTERVAL` | `3600` | Time to sleep in between runs; in seconds
 `SPEEDTEST_SERVER` | `null` | SpeedTest server ID (You can get the one nearest you through <https://www.speedtest.net/speedtest-servers.php>)
 
+## To-dos/Wishlist
+
+* Helm chart
+* Run and record tests from multiple servers
+
 ## License
 
 I'm kinda lazy to get into jargon, but basically, everything is provided as-is, and I am not liable if using this code bricks your device, causes a nuclear holocaust, or anything in between. The nearest one from that is MIT, so there ya go.
