@@ -1,10 +1,12 @@
 # Yet another Speedtest-to-InfluxDB Docker thing
 
-This is just a culmination of a lot of Speedtest-related stuff on GitHub and improved on it, just so I can have a means of reporting it to my ISPs when they start to act funny.
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/jmacalinao/speedtest-influx?style=for-the-badge)
+
+This is just a culmination of a lot of Speedtest-related stuff on GitHub and improved on it, just so I can have a means of reporting it to my ISPs when they start to act funny. I'm currently using this on my homelab/mini-datacenter.
 
 The scripts are based from valki2's [Speedtest docker container](https://github.com/valki2/Speedtestplusplus), but using the official Speedtest CLI instead of taganaka's [SpeedTest++](https://github.com/taganaka/SpeedTest). Modified it further to include the results embed/link when sending it over to InfluxDB.
 
-The Grafana dashboard is based from frdmn's [dashboard](https://github.com/frdmn/docker-speedtest-grafana), but customized a bunch.
+The Grafana dashboard is based from frdmn's [dashboard](https://github.com/frdmn/docker-speedtest-grafana), and customized a bunch.
 
 ![Grafana dashboard](dashboard.png "Grafana dashboard")
 
