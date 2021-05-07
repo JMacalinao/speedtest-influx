@@ -23,7 +23,7 @@ Install Docker and Docker Compose, clone the repo, and then:
 
     docker-compose up -d
 
-You access Grafana from <http://localhost:3000>.
+You can access Grafana from <http://localhost:3000>.
 
 ### All-in-one, using Helm Chart
 
