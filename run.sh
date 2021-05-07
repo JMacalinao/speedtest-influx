@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Wait of a while for things to calm down
+# Wait for things to calm down for a while
 sleep 60
 
 while :; do
