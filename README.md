@@ -19,7 +19,7 @@ The Grafana dashboard is based from frdmn's [dashboard](https://github.com/frdmn
 
 ### All-in-one, using Docker Compose
 
-Install Docker and Docker Compose, clone the repo or get the docker-compose.yml file, and then:
+Install Docker and Docker Compose, clone the repo, and then:
 
     docker-compose up -d
 
