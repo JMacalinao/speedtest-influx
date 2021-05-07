@@ -21,7 +21,7 @@ Install Docker and Docker Compose, clone the repo or get the docker-compose.yml 
 
     docker-compose up -d
 
-You access Grafana from http://localhost:3000.
+You access Grafana from <http://localhost:3000>.
 
 ### All-in-one, using Helm Chart
 
@@ -35,7 +35,7 @@ Environment variable | Default | Description
 `INFLUXDB_DB` | `speedtest` | Database name
 `SPEEDTEST_HOST` | `local` | Name of Speedtest host
 `SPEEDTEST_INTERVAL` | `3600` | Time to sleep in between runs; in seconds
-`SPEEDTEST_SERVER` | `null` | SpeedTest server ID (You can get the one nearest you through https://www.speedtest.net/speedtest-servers.php)
+`SPEEDTEST_SERVER` | `null` | SpeedTest server ID (You can get the one nearest you through <https://www.speedtest.net/speedtest-servers.php>)
 
 ## License
 
