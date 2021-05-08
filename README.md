@@ -41,7 +41,7 @@ Environment variable | Default | Description
 `INFLUXDB_DB` | `speedtest` | Database name
 `SPEEDTEST_HOST` | `local` | Name of Speedtest host
 `SPEEDTEST_INTERVAL` | `3600` | Time to sleep in between runs; in seconds
-`SPEEDTEST_SERVER` | `null` | SpeedTest server ID (You can get the one nearest you through <https://www.speedtest.net/speedtest-servers.php>)
+`SPEEDTEST_SERVER` | `null` | SpeedTest server ID (You can get the ID of your preferred server through <https://www.speedtest.net/speedtest-servers.php>)
 
 ## To-dos/Wishlist
 
