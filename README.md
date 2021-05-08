@@ -22,7 +22,7 @@ Install Docker and Docker Compose, and then:
     cd speedtest-influx
     sudo docker-compose up -d
 
-You can access Grafana from <http://localhost:3000>.
+You can access Grafana from <http://localhost:3000>. Configured password is `password`, but I recommend you change it.
 
 ### All-in-one, using Helm Chart
 
