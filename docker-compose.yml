@@ -4,7 +4,7 @@ services:
   influxdb:
     image: influxdb:1.8
     restart: always
-    # IF you want the DB exposed for use elsewhere
+    # Uncomment below you want the DB exposed for use elsewhere
     # ports:
     #   - 8086:8086
     volumes:
@@ -27,6 +27,7 @@ services:
   speedtest:
     image: jmacalinao/speedtest-influx
     restart: always
+    # Uncomment below if you need to set these variables
     # environment:
     #   - SPEEDTEST_INTERVAL=
     #   - SPEEDTEST_SERVER=
