@@ -24,7 +24,7 @@ Install Docker and Docker Compose, and then:
     cd speedtest-influx
     sudo docker-compose up -d
 
-You can access Grafana from <http://localhost:3000>. Default username is `admin`, and configured password is `password`, but I recommend you change it (for first-time use, change it in the compose file, otherwise change it in Grafana).
+You can access Grafana from <http://localhost:3000>. Default username is `admin`, and configured password is `password`, but I recommend you change it.
 
 ### All-in-one, using Helm Chart
 
