@@ -20,8 +20,11 @@ services:
       - ./grafana/provisioning:/etc/grafana/provisioning
     environment:
       - GF_SERVER_ROOT_URL=http://localhost
-      - GF_SECURITY_ADMIN_PASSWORD=password
       - GF_INSTALL_PLUGINS=dalvany-image-panel
+      - GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/speedtest.json
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      # Replace above with below to replace anonymous access
+      # - GF_SECURITY_ADMIN_PASSWORD=password
     depends_on:
       - influxdb
   speedtest:
