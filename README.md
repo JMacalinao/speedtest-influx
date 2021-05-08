@@ -12,22 +12,26 @@ The Grafana dashboard is based from frdmn's [dashboard](https://github.com/frdmn
 
 ## Installation
 
-### Using the Dockerfile
+### All-in-one, using Docker Compose (recommended)
 
-    docker build -t speedtest-influx .
-    docker run --restart=always speedtest-influx
+The Docker Compose file includes InfluxDB and Grafana, with the datasource and dashboard configured.
 
-### All-in-one, using Docker Compose
+Install Docker and Docker Compose, and then:
 
-Install Docker and Docker Compose, clone the repo, and then:
-
-    docker-compose up -d
+    git clone https://github.com/JMacalinao/speedtest-influx.git
+    cd speedtest-influx
+    sudo docker-compose up -d
 
 You can access Grafana from <http://localhost:3000>.
 
 ### All-in-one, using Helm Chart
 
 Coming soon. (Note to self: Stop being lazy so you can deploy this one with a chart instead of doing it manually!)
+
+### Using the Dockerfile
+
+    docker build -t speedtest-influx .
+    docker run --restart=always speedtest-influx
 
 ## Usage
 

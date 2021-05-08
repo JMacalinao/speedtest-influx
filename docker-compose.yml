@@ -4,8 +4,9 @@ services:
   influxdb:
     image: influxdb:1.8
     restart: always
-    ports:
-      - 8086:8086
+    # IF you want the DB exposed for use elsewhere
+    # ports:
+    #   - 8086:8086
     volumes:
       - influxdb:/var/lib/influxdb
     environment:
