@@ -12,6 +12,8 @@ The Grafana dashboard is based from frdmn's [dashboard](https://github.com/frdmn
 
 ## Installation
 
+> **Note:** When you first run it, you'll notice that nothing happens for the first minute. This is normal; the script sleeps for a minute to give the machine a chance to calm down before it starts running a test.
+
 ### All-in-one, using Docker Compose (recommended)
 
 The Docker Compose file includes InfluxDB and Grafana, with the datasource and dashboard configured.
@@ -22,7 +24,7 @@ Install Docker and Docker Compose, and then:
     cd speedtest-influx
     sudo docker-compose up -d
 
-You can access Grafana from <http://localhost:3000>. Configured password is `password`, but I recommend you change it.
+You can access Grafana from <http://localhost:3000>. Default username is `admin`, and configured password is `password`, but I recommend you change it (for first-time use, change it in the compose file, otherwise change it in Grafana).
 
 ### All-in-one, using Helm Chart
 
